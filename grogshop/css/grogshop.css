@@ -1,0 +1,200 @@
+@import url("reset.css");
+body, .header, .footer ul {
+  display: -webkit-flex; }
+
+html {
+  font-size: 100px; }
+
+body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  color: #303030;
+  background: #fff;
+  -webkit-flex-direction: column;
+  font-size: 16px;
+  font-family: "Microsoft YaHei"; }
+
+.header {
+  color: #333;
+  height: .44rem;
+  padding: 0 .15rem;
+  background: #fff;
+  text-align: center;
+  line-height: .44rem;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-around; }
+  .header a {
+    text-decoration: none;
+    font-size: .2rem; }
+  .header em {
+    -webkit-flex: 3;
+    font-size: .24rem; }
+  .header span {
+    font-size: .2rem; }
+
+.main {
+  -webkit-flex: 1;
+  overflow-y: auto; }
+  .main .banner {
+    width: 100%; }
+    .main .banner img {
+      width: 100%;
+      height: 100%; }
+  .main .character {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 15px; }
+    .main .character h2 {
+      font-size: 16px;
+      color: #9ec7f8; }
+    .main .character h4 {
+      margin-top: 15px;
+      margin-bottom: 10px; }
+    .main .character p {
+      line-height: .2rem; }
+  .main h1 {
+    height: 0.1rem;
+    background: #eeeeee; }
+  .main h3 {
+    height: 0.5rem;
+    background: #4f99f2;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    line-height: .5rem; }
+  .main .qima {
+    width: 42%;
+    margin: 20px auto; }
+    .main .qima img {
+      width: 100%;
+      height: 100%; }
+  .main .title {
+    height: .5rem;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
+    line-height: .5rem;
+    font-weight: normal;
+    padding-left: 15px; }
+  .main .product {
+    display: -webkit-flex; }
+    .main .product div {
+      width: 50%;
+      line-height: .25rem; }
+      .main .product div h5 {
+        text-align: center; }
+      .main .product div p {
+        color: #007aff;
+        text-align: center; }
+      .main .product div ul {
+        padding: 10px; }
+        .main .product div ul li {
+          font-size: 12px; }
+  .main .map {
+    width: 100%; }
+    .main .map dl {
+      display: -webkit-flex;
+      padding: 10px 15px; }
+      .main .map dl dt {
+        width: .5rem; }
+        .main .map dl dt img {
+          width: 100%;
+          height: 100%; }
+      .main .map dl dd {
+        margin-left: 10px; }
+        .main .map dl dd h6 {
+          font-weight: normal;
+          color: #adadad; }
+        .main .map dl dd p {
+          color: #cfcfcf;
+          line-height: 0.4rem; }
+    .main .map ol li {
+      padding-left: 15px;
+      line-height: .25rem; }
+  .main .map-map {
+    width: 100%;
+    height: 600px; }
+  .main .record {
+    margin-top: 15px; }
+    .main .record h2 {
+      text-align: center;
+      font-weight: normal;
+      color: #4f99f2;
+      font-size: 16px; }
+    .main .record p {
+      text-align: center;
+      color: #4f99f2;
+      line-height: .4rem; }
+      .main .record p img {
+        width: 15px;
+        height: 15px; }
+    .main .record div {
+      display: -webkit-flex; }
+      .main .record div dl {
+        width: 50%;
+        text-align: center; }
+        .main .record div dl dt {
+          width: .8rem;
+          height: .8rem;
+          margin: 15px auto; }
+          .main .record div dl dt img {
+            width: 100%;
+            height: 100%; }
+        .main .record div dl dd {
+          color: #4f99f2; }
+  .main .approve {
+    margin-top: 10px; }
+    .main .approve h2 {
+      height: .5rem;
+      line-height: .5rem;
+      text-align: center;
+      font-size: 18px;
+      font-weight: normal;
+      color: #4f99f2; }
+    .main .approve .banner {
+      width: .8rem;
+      margin: 0 auto; }
+      .main .approve .banner img {
+        width: 100%;
+        height: 100%; }
+    .main .approve p {
+      text-align: center;
+      padding: 15px; }
+
+.footer {
+  width: 100%;
+  height: .48rem;
+  background: #ffffff;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  border-top: 2px solid #eaeaea; }
+  .footer ul {
+    width: 100%;
+    height: .48rem; }
+    .footer ul li {
+      -webkit-flex: 1;
+      height: .48rem;
+      text-align: center;
+      cursor: pointer; }
+      .footer ul li:first-child h4 {
+        color: #1e2e45; }
+      .footer ul li:first-child h5 {
+        color: #1e2e45; }
+      .footer ul li:hover {
+        color: #1e2e45; }
+    .footer ul a {
+      color: #8c8c8c;
+      text-decoration: none; }
+    .footer ul h4 {
+      font-size: .18rem;
+      margin: .07rem 0 .04rem; }
+    .footer ul h5 {
+      font-size: .12rem;
+      font-weight: normal;
+      cursor: pointer; }
+
+/*# sourceMappingURL=grogshop.css.map */

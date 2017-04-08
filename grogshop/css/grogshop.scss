@@ -1,0 +1,273 @@
+@import url("reset.css");
+%full{
+  width:100%;
+  height:100%;
+}
+%flex{
+  display:-webkit-flex;
+}
+@mixin pos($pos:absolute){
+  position:$pos;
+}
+html{
+  font-size:100px;
+}
+body{
+  @include pos;
+  @extend %flex;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  color: #303030;
+  background: #fff;
+  -webkit-flex-direction: column;
+  font:{
+    size:16px;
+    family:"Microsoft YaHei";
+  }
+}
+
+.header{
+  color: #333;
+  @extend %flex;
+  height: .44rem;
+  padding: 0 .15rem;
+  background:#fff;
+  text-align: center;
+  line-height: .44rem;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-around;
+  a{
+
+    text-decoration: none;
+    font-size: .2rem;
+  }
+  em{
+    -webkit-flex: 3;
+    font-size: .24rem;
+  }
+  span{
+    font-size: .2rem;
+  }
+}
+.main{
+  -webkit-flex: 1;
+  overflow-y: auto;
+  .banner{
+    width: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .character{
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 15px;
+    h2{
+      font-size: 16px;
+      color: #9ec7f8;
+    }
+    h4{
+      margin-top: 15px;
+      margin-bottom: 10px;
+
+    }
+    p{
+      line-height: .2rem;
+    }
+  }
+  h1{
+    height: 0.1rem;
+    background: #eeeeee;
+  }
+  h3{
+    height: 0.5rem;
+    background: #4f99f2;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    line-height: .5rem;
+  }
+  .qima{
+    width: 42%;
+    margin: 20px auto;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .title{
+    height: .5rem;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
+    line-height: .5rem;
+    font-weight: normal;
+    padding-left: 15px;
+  }
+  .product{
+    display: -webkit-flex;
+    div{
+      width: 50%;
+      line-height: .25rem;
+      h5{
+        text-align: center;
+      }
+      p{
+        color: #007aff;
+        text-align: center;
+      }
+      ul{
+        padding: 10px;
+        li{
+          font-size: 12px;
+
+        }
+      }
+    }
+  }
+  .map{
+    width: 100%;
+    dl{
+      display: -webkit-flex;
+      padding: 10px 15px;
+      dt{
+        width: .5rem;
+        img{
+          width: 100%;
+          height: 100%;
+
+        }
+      }
+      dd{
+        margin-left: 10px;
+        h6{
+          font-weight: normal;
+          color: #adadad;
+        }
+        p{
+          color: #cfcfcf;
+          line-height: 0.4rem;
+        }
+      }
+    }
+    ol{
+      li{
+        padding-left: 15px;
+        line-height: .25rem;
+      }
+    }
+
+  }
+  .map-map{
+    width: 100%;
+    height: 600px;
+  }
+  .record{
+
+      margin-top: 15px;
+      h2{
+        text-align: center;
+        font-weight: normal;
+        color: #4f99f2;
+        font-size: 16px;
+      }
+      p{
+        text-align: center;
+        color: #4f99f2;
+        line-height: .4rem;
+        img{
+          width: 15px;
+          height: 15px;
+        }
+
+    }
+    div{
+      display: -webkit-flex;
+      dl{
+        width: 50%;
+        text-align: center;
+        dt{
+          width: .8rem;
+          height: .8rem;
+          margin: 15px auto;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        dd{
+          color: #4f99f2;
+        }
+      }
+    }
+  }
+  .approve{
+    margin-top: 10px;
+    h2{
+        height: .5rem;
+        line-height: .5rem;
+        text-align: center;
+        font-size: 18px;
+        font-weight: normal;
+        color: #4f99f2;
+    }
+    .banner{
+      width: .8rem;
+      margin: 0 auto;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    p{
+      text-align: center;
+      padding: 15px;
+    }
+  }
+}
+.footer{
+  width:100%;
+  height:.48rem;
+  background:#ffffff;
+  //position:fixed;
+  bottom:0;
+  left:0;
+  text-align: center;
+  border-top:2px solid #eaeaea;
+  ul{
+    width:100%;
+    height:.48rem;
+    @extend %flex;
+    li{
+      -webkit-flex: 1;
+      height:.48rem;
+      text-align:center;
+      cursor: pointer;
+      &:first-child h4{
+        color: #1e2e45;
+      }
+      &:first-child h5{
+        color: #1e2e45;
+      }
+      &:hover{
+        color: #1e2e45;
+      }
+    }
+    a{
+      color: #8c8c8c;
+      text-decoration: none;
+    }
+    h4{
+      font-size: .18rem;
+      margin: .07rem 0 .04rem;
+    }
+    h5{
+      font-size: .12rem;
+      font-weight: normal;
+      cursor: pointer;
+    }
+  }
+}
